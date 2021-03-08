@@ -1,0 +1,22 @@
+{
+  "name": "projet3",
+  "version": "1.0.0",
+  "description": "projet 3 OPC",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/header.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandre-goeuriot/Projet3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandre-goeuriot/Projet3/issues"
+  },
+  "homepage": "https://github.com/alexandre-goeuriot/Projet3#readme",
+  "dependencies": {
+    "simple-recaptcha-new": "^1.1.1"
+  }
+}
