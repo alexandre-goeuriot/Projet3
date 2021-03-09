@@ -39,3 +39,29 @@
     }
 
 }
+
+#fonctionnement{
+    height: 250px;
+    .fonctionnement__title {
+        padding: 20px;
+    }
+    .fonctionnement__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .fonctionnement__card {
+      
+        display: flex;
+        align-items: center;
+        background-color: #f6f6f7;
+        height: 60px;
+        width: 20%;
+        border-radius: 20px;
+        box-shadow: 1px 3px 10px rgb(0 0 0 / 20%);
+        padding: 0 10px;
+    }
+    
+
+}

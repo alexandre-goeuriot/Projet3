@@ -62,6 +62,29 @@ header .logo {
   cursor: pointer;
 }
 
+#fonctionnement {
+  height: 250px;
+}
+#fonctionnement .fonctionnement__title {
+  padding: 20px;
+}
+#fonctionnement .fonctionnement__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+#fonctionnement .fonctionnement__card {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f7;
+  height: 60px;
+  width: 20%;
+  border-radius: 20px;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 0 10px;
+}
+
 footer {
   background-color: #353535;
   color: #fff;
