@@ -1,9 +1,19 @@
-.localisation {
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$backgroundColor-primary: #f6f6f7;
+$backgroundColor-secondary: #eaeaea;
+$backgroundColor-tertiary: #353535;
+@mixin flex-center{
     display: flex;
     align-items: center;
+}
+
+.localisation {
+    @include flex-center;
     justify-content: center;
     height: 50px;
-    background-color: #eaeaea;
+    background-color: $backgroundColor-secondary;
     color: black;
     .localisation__text {
         margin-left: 10px;
@@ -11,11 +21,10 @@
 }
 
 #reservation {
-    display: flex;
-    align-items: center;
+    @include flex-center;
     flex-direction: column;
     height: 160px;
-    background-color: #f6f6f7;
+    background-color: $backgroundColor-primary;
     text-align: center;
     padding: 40px 0;
     .reservation__title {
@@ -24,7 +33,7 @@
     .reservation__subtitle {
             font-weight: lighter;
             font-size: 20px;
-            color: #343333;
+            color: $backgroundColor-tertiary;
             margin-bottom: 30px;
         }
     .reservation__btn {
@@ -41,27 +50,59 @@
 }
 
 #fonctionnement{
-    height: 250px;
+    height: 200px;
     .fonctionnement__title {
-        padding: 20px;
+        padding: 30px;
     }
     .fonctionnement__list {
-        display: flex;
-        align-items: center;
+        @include flex-center;
         justify-content: space-around;
         flex-direction: row;
     }
     .fonctionnement__card {
-      
-        display: flex;
-        align-items: center;
-        background-color: #f6f6f7;
+        @include flex-center;
+        background-color: $backgroundColor-primary;
         height: 60px;
-        width: 20%;
+        width: 25%;
         border-radius: 20px;
         box-shadow: 1px 3px 10px rgb(0 0 0 / 20%);
-        padding: 0 10px;
+        .fonctionnement__card__number{
+            @include flex-center;
+            justify-content: center;
+            height: 30px;
+            width: 30px;
+            border-radius: 100%;
+            background-color: $color-primary;
+            color: #fff;
+            margin-right: 10px;
+            transform: translateX(-15px);
+        }
+        .fonctionnement__card__icon{
+            margin-right: 10px;
+            color: #7e7e7e;
+        }
+        .fonctionnement__card__icon--color{
+            margin-right: 10px;
+            color: $color-primary;   
+        }
     }
-    
+}
+
+#restaurants {
+    height: 300px;
+    background-color: $backgroundColor-primary;
+
+    .restaurant__title {
+        padding: 30px;
+    }
+    .restaurant__list {
+        @include flex-center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        .restaurant__card {
+            border-radius: 1.25rem;
+            box-shadow: 0 0 16px #0000002e;
+        }
+    }
 
 }
