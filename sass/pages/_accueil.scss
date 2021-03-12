@@ -41,6 +41,7 @@ $backgroundColor-tertiary: #353535;
             height: 50px;
             border-radius: 50px;
             color: #fff;
+            background: linear-gradient($color-secondary, $color-primary);
             font-size: 15px;
             box-shadow: 0px 5px 10px rgb(0 0 0 / 40%);
             border: none;
@@ -89,7 +90,7 @@ $backgroundColor-tertiary: #353535;
 }
 
 #restaurants {
-    height: 300px;
+    height: 450px;
     background-color: $backgroundColor-primary;
 
     .restaurant__title {
@@ -99,10 +100,29 @@ $backgroundColor-tertiary: #353535;
         @include flex-center;
         justify-content: space-around;
         flex-wrap: nowrap;
+
         .restaurant__card {
             border-radius: 1.25rem;
             box-shadow: 0 0 16px #0000002e;
+            color: black;
+            }
+            .restaurant__card__img {
+                border-radius: 10px 10px 0 0;
+            }
+            .restaurant__card__title,  .restaurant__card__subtitle {
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+            .restaurant__card__subtitle {
+                font-weight: lighter;
+            }
+            .restaurant__card__icon {
+                position: relative;
+                left: 85%;
+                bottom: 30px;
+                font-size: 18px;
+            }
         }
     }
 
-}
+
